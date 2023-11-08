@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" style="display: flex; flex-direction: column; gap: 5px; width: 50%; margin-left: 25%; margin-top: 5%;">
+    <mat-form-field>
+      <input matInput placeholder="Número" name="numero" [(ngModel)]="empleadoAgregar.numeroEmpleado" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Nombre" name="nombre" [(ngModel)]="empleadoAgregar.nombre" required >
+    </mat-form-field>
+  
+    <mat-radio-group [(ngModel)]="empleadoAgregar.rol">
+        <input type="radio" (change)="onRolChange('chofer')"> Chofer
+        <input type="radio" (change)="onRolChange('cargador')"> Cargador
+        <input type="radio" (change)="onRolChange('auxiliar')"> Auxiliar
+    </mat-radio-group>
+  <h3>{{empleadoAgregar.rol}}</h3>
+    <button mat-raised-button color="primary" style="width: 15%; margin-left: 45%;" type="submit">Aceptar</button>
+    <button mat-button type="button" style="width: 15%; margin-left: 45%;" (click)="onCancel()">Cancelar</button>
+  </form>
+  
