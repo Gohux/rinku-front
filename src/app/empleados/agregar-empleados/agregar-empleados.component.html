@@ -8,9 +8,9 @@
     </mat-form-field>
   
     <mat-radio-group [(ngModel)]="empleadoAgregar.rol">
-        <input type="radio" (change)="onRolChange('chofer')"> Chofer
-        <input type="radio" (change)="onRolChange('cargador')"> Cargador
-        <input type="radio" (change)="onRolChange('auxiliar')"> Auxiliar
+        <input type="radio" name="rol" (change)="onRolChange('chofer')"> Chofer
+        <input type="radio" name="rol" (change)="onRolChange('cargador')"> Cargador
+        <input type="radio" name="rol" (change)="onRolChange('auxiliar')"> Auxiliar
     </mat-radio-group>
     <button mat-raised-button color="primary" style="width: 15%; margin-left: 45%;" type="submit">Aceptar</button>
     <button mat-button type="button" style="width: 15%; margin-left: 45%;" (click)="onCancel()">Cancelar</button>

@@ -57,8 +57,8 @@ export class ListadoEmpleadosComponent implements OnInit {
                 Empleado: ${resultado.Nombre}
                 Rol del empleado: ${resultado.Rol}
                 Su sueldo con fecha de ${resultado.fecha} es de:
-                Sueldo base: +${resultado.BonoMensual}
-                bonos: +${resultado.SueldoBaseMensual}
+                Sueldo base: +${resultado.SueldoBaseMensual}
+                bonos: +${resultado.BonoMensual}
                 vale +${resultado.ValeDespensa}
                 bono por entrega: +${resultado.BonoPorEntrega}
                 retención ISR: -${resultado.RetencionImpuestos}
